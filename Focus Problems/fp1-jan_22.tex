@@ -1,0 +1,109 @@
+\documentclass[12pt,letterpaper]{../hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+\newcommand{\vc}[1]{\left\langle #1 \right\rangle}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+
+% set numbering style for enumerated lists to be of form (a), (b), (c), etc.
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+% command to make 2in wide image centered on page
+\newcommand{\diagram}[1]{\begin{center}\includegraphics[width=2in]{#1}\end{center}}
+
+\begin{document}
+	
+	% info for header block in upper right hand corner
+	\vspace*{-3\baselineskip}
+	\begin{center}
+		\begin{flushright} --- \\ Math 40 \\ FP1 - Vectors and Vector Spaces \\ Fri. 1/20, 2016 \\ 
+		\end{flushright} 	
+	\end{center}
+	\bigskip
+
+\problemlist{1.2\{ 17, 18, 52, 56, 58, 60 \}}
+
+% 1.2.17
+\begin{problem}[17]
+	If \textbf{u}, \textbf{v}, and \textbf{w} are vectors in $\mathbb{R}^n$, \textit{n} $\geq$ 2, and c is a scalar, explain why the following expressions make no sense:
+	
+	\begin{enumerate}
+		\item 
+			$\| \mathbf{u} \cdot \mathbf{v} \|$
+		\item
+			$\mathbf{u} \cdot (\mathbf{v} \cdot \mathbf{w})$
+		\item
+			$\mathbf{u} \cdot \mathbf{v} + \mathbf{w}$
+		\item
+			$c \cdot (\mathbf{u} + \mathbf{w})$
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+\end{solution}
+\newpage
+
+% 1.2.18
+\begin{problem}[18]
+	Determine whether the angle between $\mathbf{u} = \begin{bmatrix}
+		3 \\
+		0
+	\end{bmatrix}$ and $\mathbf{v} = \begin{bmatrix}
+		-1 \\
+		1
+	\end{bmatrix}$ is acute, obtuse or a right angle.
+\end{problem}
+
+\begin{solution}
+\end{solution}
+\newpage
+
+% 1.2.52
+\begin{problem}[52]
+	Under what conditions are the following true for vectors \textbf{u} and \textbf{v} in $\mathbb{R}^2$ or $\mathbb{R}^3$?
+	\begin{enumerate}
+		\item 
+			$\| \mathbf{u} + \mathbf{v} \| = \| \mathbf{u} \| + \| \mathbf{v} \|$
+		\item
+			$\| \mathbf{u} + \mathbf{v} \| = \| \mathbf{u} \| - \| \mathbf{v} \|$
+	\end{enumerate}
+\end{problem}
+
+\begin{solution}
+\end{solution}
+\newpage
+
+% 1.2.56
+\begin{problem}[56]
+	Prove $d(\mathbf{u}, \mathbf{w}) \leq d(\mathbf{u}, \mathbf{v}) + d(\mathbf{v}, \mathbf{w})$ for all vectors \textbf{u}, \textbf{v}, and \textbf{w}. 
+\end{problem}
+
+\begin{solution}
+\end{solution}
+\newpage
+
+% 1.2.58
+\begin{problem}[58]
+	Prove  that $\mathbf{u} \cdot \mathit{c}\mathbf{v} = \mathit{c}(\mathbf{u} \cdot \mathbf{v})$ for all vectors \textbf{u} and \textbf{v} in $\mathbb{R}^n$ and all scalars \textit{c}.
+\end{problem}
+
+\begin{solution}
+\end{solution}
+\newpage
+	
+% 1.2.60
+\begin{problem}[60]
+	Suppose we know that $\mathbf{u} \cdot \mathbf{v} = \mathbf{u} \cdot \mathbf{w}$. Does it follow that $\mathbf{v} = \mathbf{w}$?
+	
+	If it does, give a proof that is valid in $\mathbb{R}^n$; otherwise, give a \textit{counterexample} (i.e., a \textit{specific} set of vectors \textbf{u}, \textbf{v}, and \textbf{w} for which $\mathbf{u} \cdot \mathbf{v} = \mathbf{u} \cdot \mathbf{w}$ but $\mathbf{v} \neq \mathbf{w}$). 
+\end{problem}
+
+\begin{solution}
+\end{solution}
+\newpage
+
+\end{document}
