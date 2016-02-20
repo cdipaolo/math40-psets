@@ -1,0 +1,113 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+% info for header block in upper right hand corner
+\name{ }
+\class{Math 40 - Section ---}
+\assignment{HW 9 - Eigenvalues and Eigenvectors}
+\duedate{Tuesday, February 23, 2016}
+
+\newcommand{\pn}[1]{\left( #1 \right)}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\bk}[1]{\left[ #1 \right]}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+\newcommand{\dm}[1]{\left| \renewcommand*{\arraystretch}{1.3} \begin{matrix} #1 \end{matrix} \right|}
+\newcommand{\m}[1]{\renewcommand*{\arraystretch}{1.3} \begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\am}[2]{
+  \left[\renewcommand*{\arraystretch}{1.3}
+    \begin{matrix}
+      #1
+    \end{matrix}
+  \right| \left.
+  \renewcommand*{\arraystretch}{1.3}
+  \begin{matrix}
+    #2
+  \end{matrix} \right]} % augmented matrix
+
+\begin{document}
+
+\problemlist{4.3.\{6, 8, 22, 24, 32, 34\}}
+
+% 4.3.6 %
+\begin{problem}[4.3.6]
+	Compute (a) the characteristic polynomial of A, (b) the eigenvalues of A, (c) a basis for each eigenspace of A, and (d) the algebraic and geometric multiplicity of each eigenvalue.
+  $$ A = \m{1 & 0 & 2 \\ 3 & -1 & 3 \\ 2 & 0 & 1} $$
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+\newpage
+
+% 4.3.8 %
+\begin{problem}[4.3.8]
+	Compute (a) the characteristic polynomial of A, (b) the eigenvalues of A, (c) a basis for each eigenspace of A, and (d) the algebraic and geometric multiplicity of each eigenvalue.
+  $$ A = \m{1 & -1 & -1 \\ 0 & 2 & 0 \\ -1 & -1 & 1} $$
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+\newpage
+
+% 4.3.22 %
+\begin{problem}[4.3.22]
+	If $\mathbf{v}$ is an eigenvectur of $A$ with corresponding eigenvalue $\lambda$ and $c$ is a scalar, show that $\mathbf{v}$ is an eigenvector of $A - cI$ with corresponding eigenvalue $\lambda - c$.
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+\newpage
+
+% 4.3.24 %
+\begin{problem}[4.3.24]
+Let $A$ and $B$ be $n \times n$ matrices with eigenvalues $\lambda$ and $\mu$, respectively.
+	\begin{enumerate}
+		\item
+			Give an example to show that $\lambda + \mu$ need not be an eigenvalue of $A+B$.
+		\item
+			Give an example to show that $\lambda\mu$ need not be an eigenvalue of $AB$.
+		\item
+			Suppose $\lambda$ and $\mu$ correspond to the \emph{same} eigenvector $\mathbf{x}$. Show that, in this case, $\lambda + \mu$ is an eigenvalue of $A+B$ and $\lambda\mu$ is an eigenvalue of $AB$.
+	\end{enumerate}
+
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+\newpage
+
+% 4.3.32 %
+\begin{problem}[4.3.32]
+	\begin{enumerate}
+		\item
+			Use mathematical induction to prove that, for $n \geq 2$, the companion matrix $C(p)$ of $p(c) = x^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0$ has characteristic polynomial $(-1)^np(\lambda)$. [\emph{Hint}: Expand by cofactors along the last column. You may find it helpful to introduce the polynomial $q(x) = (p(x) -a_0)/x$.]
+		
+		\item
+			Show that if $\lambda$ is an eigenvalue of the companion matrix $C(p)$ in Equation (4), then an eigenvector corresponding to $\lambda$ is given by
+			$$\m{\lambda^{n-1}\\\lambda^{n-2}\\ \vdots \\ \lambda \\ 1}$$
+	\end{enumerate}
+
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+\newpage
+
+% 4.3.34 %
+\begin{problem}[4.3.34]
+Verify the Cayley-Hamilton Theorem for
+$$ A = \m{1 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1}$$
+\end{problem}
+
+\begin{solution}
+\vfill
+\end{solution}
+
+\end{document}
