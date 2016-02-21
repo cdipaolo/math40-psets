@@ -84,14 +84,27 @@ Let $A$ and $B$ be $n \times n$ matrices with eigenvalues $\lambda$ and $\mu$, r
 
 % 4.3.32 %
 \begin{problem}[4.3.32]
-	\begin{enumerate}
-		\item
-			Use mathematical induction to prove that, for $n \geq 2$, the companion matrix $C(p)$ of $p(x) = x^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0$ has characteristic polynomial $(-1)^np(\lambda)$. [\emph{Hint}: Expand by cofactors along the last column. You may find it helpful to introduce the polynomial $q(x) = (p(x) -a_0)/x$.]
-		
-		\item
-			Show that if $\lambda$ is an eigenvalue of the companion matrix $C(p)$ in Equation (4), then an eigenvector corresponding to $\lambda$ is given by
-			$$\m{\lambda^{n-1}\\\lambda^{n-2}\\ \vdots \\ \lambda \\ 1}$$
-	\end{enumerate}
+
+    Let $p(x)$ be the polynomial
+    \[
+        p(x) = x^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0
+    \]
+    The \textbf{companion matrix} of $p(x)$ is
+    the $n \times n$ matrix
+    \[
+        C(p) = \m{-a_{n-1}&-a_{n-2}&\dots&-a_1&-a_0\\
+                1&0&\dots&0&0\\
+                0&1&\ddots&\vdots&\vdots\\
+                0&0&\dots&0&0\\
+                0&0&\dots&1&0}.
+    \]
+
+    \begin{enumerate}
+    \item Use mathematical induction to prove that, for $n \geq 2$, the companion matrix $C(p)$ of $p(x) = x^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0$ has characteristic polynomial $(-1)^np(\lambda)$. [\emph{Hint}: Expand by cofactors along the last column. You may find it helpful to introduce the polynomial $q(x) = (p(x) -a_0)/x$.]
+    
+    \item Show that if $\lambda$ is an eigenvalue of the companion matrix $C(p)$ in Equation (4), then an eigenvector corresponding to $\lambda$ is given by
+        $$\m{\lambda^{n-1}\\\lambda^{n-2}\\ \vdots \\ \lambda \\ 1}$$
+    \end{enumerate}
 
 \end{problem}
 
