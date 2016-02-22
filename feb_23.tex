@@ -115,8 +115,20 @@ Let $A$ and $B$ be $n \times n$ matrices with eigenvalues $\lambda$ and $\mu$, r
 
 % 4.3.34 %
 \begin{problem}[4.3.34]
-Verify the Cayley-Hamilton Theorem for
-$$ A = \m{1 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1}$$
+    \textbf{THM:} (Cayley-Hamilton)
+    If $p(x)=x^n + a_{n-1}x^{n-1}+\dots+a_1x+a_0$
+    and $A$ is a square matrix, we can define
+    a square matrix $p(A)$ by
+    \[
+        p(A) = A^n + a_{n-1}A^{n-1} + \dots + a_1A+a_0I.
+    \]
+    If $c_A(\lambda)$ is the characteristic
+    polynomial of the matrix $A$, then $c_A(A)
+    =O$. In words, every matrix satisfies it's
+    characteristic equation.\\
+
+    Verify the Cayley-Hamilton Theorem for
+    $$ A = \m{1 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 1}$$
 \end{problem}
 
 \begin{solution}
